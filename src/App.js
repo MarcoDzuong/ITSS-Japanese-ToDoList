@@ -1,9 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
-import ToDoList from './components/ToDoList';
+import React from 'react'
+
+/* スタイルシート */
+import './styles/main.css';
+
+/* コンポーネント */
+import Todo from './components/Todo';
 
 function App() {
-  return <ToDoList/>;
+  return (
+    <div className="container is-fluid">
+      <Todo />
+    </div>
+  );
 }
 
 export default App;
